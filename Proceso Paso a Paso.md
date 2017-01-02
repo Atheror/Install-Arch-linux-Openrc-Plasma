@@ -1,7 +1,9 @@
 # Install-Arch-linux-Openrc-Plasma
 Instalación Plasma 5 en Arch Linux openrc
-## Descarga
-Arch OpenRC: https://sourceforge.net/projects/archopenrc/files/arch-openrc
+Si desea usar BTRFS y LUKS(Home encriptado), puede revisar https://gist.github.com/ansulev/86240de242fa2dfd710b744247da6df3#file-inst-arch-openrc-btrfs-enc-home
+
+## Descargar el ISO desde
+Arch OpenRC: https://sourceforge.net/projects/archopenrc/
 
 ## Copiar en USB
 dd if=archlinux-openrc-xxx-xx-xx.iso of=/dev/sdX bs=16M status=progress && sync
