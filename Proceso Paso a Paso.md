@@ -155,12 +155,6 @@ el comando para cada servicio sería `rc-update add SERVICIO default` para ahorr
 for daemon in acpid alsasound autofs dbus consolekit cronie cupsd xdm fuse haveged hdparm smb syslog-ng; do rc-update add $daemon default; done
 ```
 
-Luego de instalar plasma se van a requerir:
-```
-rc-update add NetworkManager default
-rc-update add sddm default
-```
-
 ### Probar el modo gráfico base
 con `startx` se ha de iniciar twm con consolas xterm visibles, para terminar ejecutar `pkill X`
 
@@ -170,6 +164,16 @@ con `startx` se ha de iniciar twm con consolas xterm visibles, para terminar eje
 pacman --noconfirm --needed -S plasma kde-applications ttf-dejavu ttf-liberation networkmanager-openrc networkmanager-consolekit sddm-consolekit
 ```
 
+Luego de instalar plasma se van a requerir habilitar el servicio de red y el display manager:
+```
+rc-update add NetworkManager default
+rc-update add sddm default
+```
+
+También es necesario editar `/etc/conf.d/xdm` y cambiar el DISPLAYMANAGER por sddm modificando la línea así:
+`DISPLAYMANAGER="sddm"`
+
+También es necesario editar /etc/
 ### instalación de pacaur
 
 ```
