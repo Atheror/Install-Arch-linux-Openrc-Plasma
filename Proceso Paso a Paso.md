@@ -1,5 +1,5 @@
 # Install-Arch-linux-Openrc-Plasma
-Instalción Plasma 5 en Arch Linux openrc
+Instalación Plasma 5 en Arch Linux openrc
 ## Descarga
 Arch OpenRC: https://sourceforge.net/projects/archopenrc/files/arch-openrc
 
