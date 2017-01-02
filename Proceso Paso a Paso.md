@@ -90,9 +90,7 @@ En éste caso se usará manualmente ingles en lugar de generarlos pero se puede 
 El método recomendado es descomentar la línea de idioma(s) respectivo(s) en ``/etc/locale.gen`` y usar el comando `localegen`
 
 ```
-echo LANG=en_US.UTF-8 >> /etc/locale.gen
-localegen
-# adicionales para compatibilidad de apps.
+echo LANG=en_US.UTF-8 >> /etc/locale.conf
 echo LANGUAGE=en_US >> /etc/locale.conf
 echo LC_ALL=C >> /etc/locale.conf
 ```
