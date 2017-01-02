@@ -196,4 +196,15 @@ sudo pacman -U pacaur*.tar.xz --noconfirm
 cd ~
 rm -r /tmp/pacaur_install
 ```
+### Aplicaciones, elección personal
 
+```
+pacaur -S --noconfirm --needed --noedit bash-completion zsh zsh-completions \
+mlocate keepassx2 bind-tools flashplugin pepper-flash google-chrome palemoon-bin uget \
+uget-chrome-wrapper gvfs-mtp libmtp mtpfs clamtk gimp inkscape \
+blender dvdauthor cdrkit kdenlive scribus qownnotes ghostwriter pandoc \
+libreoffice-fresh libreoffice-fresh-es geogebra klavaro virtualbox \
+testdisk kodi sublime-text-dev openssh mpd cantata cantata transmission-qt \
+ apachedirectorystudio jdk8-openjdk gtk-recordmydesktop python \
+vlc-nightly smplayer smplayer-skins smplayer-themes smtube mpv youtube-dl
+```
