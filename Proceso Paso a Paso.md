@@ -164,7 +164,7 @@ con `startx` se ha de iniciar twm con consolas xterm visibles, para terminar eje
 pacman --noconfirm --needed -S plasma kde-applications ttf-dejavu ttf-liberation networkmanager-openrc networkmanager-consolekit sddm-consolekit libpulse-nosystemd
 ```
 
-Luego de instalar plasma se van a requerir habilitar el servicio de red y el display manager:
+Luego de instalar plasma se habilita el servicio de red y el display manager:
 ```
 rc-update add NetworkManager default
 rc-update add sddm default
