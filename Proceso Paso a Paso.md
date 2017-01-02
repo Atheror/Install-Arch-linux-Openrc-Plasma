@@ -86,10 +86,13 @@ echo hostname="MYHOSTNAME" > /etc/conf.d/hostname
 ```
 
 #### Ajustar locales
-En éste caso se usará manualmente ingles en lugar de generarlos pero se puede usar español como es_ES.UTF-8(España) es_CO.UTF-8(Colombia), etc segun aparecen en `/etc/locale.gen`, descomentando la línea respectiva del idioma y usando el comando `localegen`
+En éste caso se usará manualmente ingles en lugar de generarlos pero se puede usar español como es_ES.UTF-8(España) es_CO.UTF-8(Colombia), etc segun aparecen en `/etc/locale.gen`.
+El método recomendado es descomentar la línea de idioma(s) respectivo(s) en ``/etc/locale.gen`` y usar el comando `localegen`
 
 ```
-echo LANG=en_US.UTF-8 >> /etc/locale.conf
+echo LANG=en_US.UTF-8 >> /etc/locale.gen
+localegen
+# adicionales para compatibilidad de apps.
 echo LANGUAGE=en_US >> /etc/locale.conf
 echo LC_ALL=C >> /etc/locale.conf
 ```
