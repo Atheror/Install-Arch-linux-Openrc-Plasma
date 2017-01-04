@@ -97,7 +97,7 @@ echo LANGUAGE=en_US >> /etc/locale.conf
 echo LC_ALL=C >> /etc/locale.conf
 ```
 #### Ajustar disposición del teclado y fuente de consola
-En caso de usar un teclado ne español latinamericano, usar `la-latin1` en lugar de `es` de España.
+En caso de usar un teclado en español latinamericano, usar `la-latin1` en lugar de `es` de España.
 
 ```
 echo keymap=es >> /etc/conf.d/keymaps
