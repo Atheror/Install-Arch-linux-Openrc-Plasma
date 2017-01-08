@@ -1,4 +1,7 @@
 # Install-Arch-linux-Openrc-Plasma
+
+> Advertencia: Arch Linux sólo tiene soporte oficial para systemd. Cuando use OpenRC, por favor mencionelo cuando solicite asistencia técnica.
+
 Instalación Plasma 5 en Arch Linux openrc
 Si desea usar BTRFS y LUKS(Home encriptado), puede revisar https://gist.github.com/ansulev/86240de242fa2dfd710b744247da6df3#file-inst-arch-openrc-btrfs-enc-home
 
