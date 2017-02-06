@@ -214,3 +214,17 @@ testdisk kodi sublime-text-dev openssh mpd cantata transmission-qt \
  apachedirectorystudio jdk8-openjdk gtk-recordmydesktop python \
 vlc-nightly smplayer smplayer-skins smplayer-themes smtube mpv youtube-dl
 ```
+## Fix pulseaudio
+Basado en el [foro de manjaro](https://forum.manjaro.org/t/pulseaudio-and-openrc/5881)
+
+`pacaur --needed --noconfirm pulseaudio pulseaudio-alsa pavucontrol`
+
+Editar */etc/pulse/client.conf*
+
+"eliminar" dice el foro.. en mi caso lo he descomentado y en estado "no"
+
+`autospawn = no`
+
+Reiniciar y verificar si el servicio está activo:
+
+`pgrep -l pulseaudio`
