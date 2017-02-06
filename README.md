@@ -216,6 +216,7 @@ vlc-nightly smplayer smplayer-skins smplayer-themes smtube mpv youtube-dl
 ```
 ## Fix pulseaudio
 Basado en el [foro de manjaro](https://forum.manjaro.org/t/pulseaudio-and-openrc/5881)
+pavucontrol es el applet de audio usado en xfce, no necesario en plasma.
 
 `pacaur --needed --noconfirm pulseaudio pulseaudio-alsa pavucontrol`
 
