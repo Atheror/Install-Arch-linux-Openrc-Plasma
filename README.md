@@ -15,7 +15,7 @@ dd if=archlinux-openrc-xxx-xx-xx.iso of=/dev/sdX bs=16M status=progress && sync
 
 `loadkeys es`
 
-### Conexiòn wifi por wpa_supplicant
+### Conexión wifi por wpa_supplicant
 Crear el archivo `RED.conf` con el siguiente contenido
 
 ```
@@ -51,7 +51,7 @@ mkdir /mnt/boot
 mount /dev/sda3 /mnt/boot
 ```
 
-### Instalación del sistema base y coenxión wifi
+### Instalación del sistema base y conexión wifi
 
 ```
 pacstrap /mnt base base-devel grub vim wpa_supplicant terminus-font os-prober
