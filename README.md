@@ -205,14 +205,9 @@ rm -r /tmp/pacaur_install
 ### Aplicaciones, elección personal
 
 ```
-pacaur -S --noconfirm --needed --noedit bash-completion zsh zsh-completions \
-mlocate keepassx2 bind-tools flashplugin pepper-flash google-chrome palemoon-bin uget \
-uget-chrome-wrapper qupzilla gvfs-mtp libmtp mtpfs clamtk gimp inkscape \
-blender dvdauthor cdrkit kdenlive scribus qownnotes ghostwriter pandoc \
-libreoffice-fresh libreoffice-fresh-es geogebra klavaro virtualbox \
-testdisk kodi sublime-text-dev openssh mpd cantata transmission-qt \
- apachedirectorystudio jdk8-openjdk gtk-recordmydesktop python \
-vlc-nightly smplayer smplayer-skins smplayer-themes smtube mpv youtube-dl
+pacaur -S --noconfirm --needed --noedit bash-completion mlocate keepassx2 bind-tools google-chrome uget uget-chrome-wrapper gvfs-mtp libmtp mtpfs clamtk gimp inkscape blender dvdauthor cdrkit kdenlive scribus qownnotes ghostwriter pandoc geogebra klavaro virtualbox linux49-virtualbox-host-modules testdisk kodi openssh mpd cantata transmission-qt python vlc-nightly smplayer smplayer-skins smplayer-themes smtube mpv youtube-dl
+
+pacaur -S --needed apachedirectorystudio jdk8-openjdk  libreoffice-fresh libreoffice-fresh-es
 ```
 ## Fix pulseaudio
 Basado en el [foro de manjaro](https://forum.manjaro.org/t/pulseaudio-and-openrc/5881)
