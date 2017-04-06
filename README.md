@@ -211,15 +211,15 @@ pacaur -S --needed apachedirectorystudio jdk8-openjdk  libreoffice-fresh libreof
 ```
 ## Fix pulseaudio
 Basado en el [foro de manjaro](https://forum.manjaro.org/t/pulseaudio-and-openrc/5881)
-pavucontrol es el applet de audio usado en xfce, no necesario en plasma.
+pavucontrol es el applet de audio usado en xfce, se supone que no es necesario en plasma pero me ha ayudado a solucionar un problema con mpd.
 
 `pacaur --needed --noconfirm pulseaudio pulseaudio-alsa pavucontrol`
 
 Editar */etc/pulse/client.conf*
 
-"eliminar" dice el foro.. en mi caso lo he descomentado y en estado "no"
+"eliminar" dice el foro.. en mi caso lo he descomentado y en estado "yes"
 
-`autospawn = no`
+`autospawn = yes`
 
 Reiniciar y verificar si el servicio está activo:
 
