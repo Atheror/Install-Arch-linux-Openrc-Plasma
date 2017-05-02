@@ -16,7 +16,7 @@ dd if=archlinux-openrc-xxx-xx-xx.iso of=/dev/sdX bs=16M status=progress && sync
 `loadkeys es`
 
 ### Conexión wifi por wpa_supplicant
-Crear el archivo `RED.conf` con el siguiente contenido
+Crear el archivo `RED.conf` con el siguiente contenido, donde ssid es el nombre de la red WiFi y psk es la clave compartida:
 
 ```
 network={
@@ -26,10 +26,10 @@ priority=3
 }
 ```
 
-Aplicar la configuración:
+Identificar el nombre de la tarjeta de red con el comando `ip a` y aplicar la configuración, en éste caso para la tarjeta **wlo1** :
 
 ```
-wpa_supplicant -B -i wlo1 -c WIFI.conf && dhcpcd wlo1
+wpa_supplicant -B -i wlo1 -c RED.conf && dhcpcd wlo1
 ```
 
 ### Crear particiones
